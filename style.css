@@ -1,0 +1,840 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  scroll-margin-top: 200px;
+  scroll-behavior: smooth;
+}
+
+h1{
+    font-weight: 600px;
+}
+
+button{
+
+    font-weight: bold;
+    padding: 1.5em;
+    transition: ease 0.8s ;
+}
+
+button:hover{
+    transform: scale(1.05);
+    background-color:#BBBBBB;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.menu{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1000;
+    background-color: #273043;
+    border-bottom: 1px solid #FCFFFC;
+}
+ 
+
+.navbar{
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color:#FCFFFC;
+    display: block
+}
+
+.navbar ul li{
+    color:#FCFFFC;
+}
+
+.navbar ul li a:hover{
+    color: #BBBBBB;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+#time{
+    right: 20px;
+    font-size: 18px;
+    padding: 20px;
+    color:#FCFFFC;
+    display: block;
+    border-left: 2px solid white;
+}
+
+
+
+
+
+.prst{
+    background-image: url('imgs/ChatGPT Image 1 jul 2026, 13_05_36.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px;
+}
+
+.prst-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    width: 20em;
+    transition: transform 0.3s ease;
+}
+
+.prst-info:hover{
+    transform: translateY(-50);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#news{
+    background-image: url('imgs/ChatGPT Image 1 jul 2026, 16_22_09.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55rem;
+    padding: 20px;
+    border-top:#FCFFFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-info{
+
+    width: 50%;
+    max-width: 120em;
+    overflow:hidden;
+    height: 25vh;
+    padding: 40px;
+    margin: 100px;
+    background-color: rgb(255, 255, 255, 0.5);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    gap: 15px;
+    border: 3px solid black;
+    overflow: hidden;
+    transition: ease 0.5s ;
+}
+
+.news-info:hover{
+    transform: scale(1.05);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.productos{
+    height: auto;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient( 45deg, rgb(94, 178, 206), #1f51a1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.productos-info{
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 50px;
+    padding-bottom: 40px;
+}
+
+.productos-info h1{
+     font-size: 50px;
+}
+.productos-contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.producto{
+    flex: 0 1 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 15px;
+    border: 3px solid black;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255, 0.5);
+    transition: ease 0.5s ;
+}
+
+
+.producto img{
+    width: 12em;
+    height: auto;
+}
+ 
+
+
+.producto:hover{
+    transform: scale(1.05);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.carrousel{
+    width: 100%;
+    max-width: 120em;
+    height: 40em;
+    background-color: lightgray;
+    margin: 0 auto;
+    overflow:hidden;
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.carrousel-info h1{
+
+    padding: 20px;
+    margin: 0auto;
+    font-size: 50px;
+}
+.carrousel .grande{
+
+    width: 400%;
+    height: 30em;
+    background-color: gray;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 50%;
+    padding-right: 50%;
+
+
+    transition: all .5s ease;
+    transform: translateX(0%)
+
+}
+.carrousel .grande img{
+
+    width: calc(100%/2 -2em);
+    background-color: #273043;
+    min-height: 90%;
+    margin: 2em;
+
+
+}
+.carrousel .puntos{
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.carrousel .punto{
+    width: 1em;
+    height: 1em;
+    background-color: #FCFFFC;
+    border-radius: 50%;
+    margin: 1em
+
+}
+
+.carrousel .punto.activo{
+     background-color: #BBBBBB;
+}
+
+
+
+
+
+
+.innovation{
+
+    height: auto;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+     background-image: linear-gradient( 45deg, rgb(94, 178, 206), #1f51a1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 30px;
+}
+.innovation-info{
+
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px;
+    padding-bottom: 20px;
+}
+
+.innovation-info h1{
+    font-size: 50px;
+}
+
+.innovation-products{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.innovation-products .producto{
+    flex: 0 1 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 15px;
+    border: 3px solid black;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255, 0.5);
+    transition: ease 0.5s ;
+}
+
+.innovation-products .producto:hover{
+    transform: scale(1.05);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.innovation-end{
+
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 50px;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+.innovation-end button{
+
+    margin: 40px;
+    padding: 1.5em;
+    transition: ease 0.5s ;
+}
+
+.innovation-end button:hover{
+    transform: scale(1.05);
+    background-color:#BBBBBB;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+
+
+
+
+
+.home{
+    background-image: url('imgs/ChatGPT\ Image\ 26\ jun\ 2026\,\ 11_39_04.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50em;
+
+    padding: 20px;
+    display:flex;
+    text-align: center;
+    align-items: center;
+
+}
+.Headquarters{
+    margin: 0 auto;
+    width: 40em;
+    height: 20em;
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 2px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 9999px;
+    overflow: hidden;
+    transition: ease 0.5s ;
+}
+
+.Headquarters p{
+    text-align: justify;
+}
+
+.Headquarters:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.about-pear{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient( 45deg, rgb(94, 178, 206), #1f51a1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.about-pear .info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-pear .info h1{
+
+    font-size: 50px;
+
+}
+
+.about-pear .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 50px auto;
+    gap: 30px;
+}
+
+.about-pear .content p{
+
+    width: 100%;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: center;
+}
+
+.about-pear .content img{
+
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: ease 0.5s ;
+}
+
+.about-pear .content img:hover{
+
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.about-pear .buttons{
+
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 30px;
+}
+
+
+.buttons button{
+
+    padding: 1.5em;
+    transition: ease 0.8s ;
+}
+
+.buttons button:hover{
+    transform: scale(1.05);
+    transform: translateY(-10px);
+    background-color:#BBBBBB;
+    cursor: pointer;
+}
+
+
+
+
+
+.sustainability{
+
+    width: 100%;
+    height: auto;
+    background-color: #273043;
+    color: #BBBBBB;
+
+}
+
+.sustainability .info{
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 50px auto;
+}
+
+.sustainability .info h1{
+    font-size: 50px;
+}
+
+.sustainability .info img{
+
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sustainability .cards{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.sustainability .cards .producto{
+    color: black;
+    height: 40vh;
+}
+
+.goals{
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 50px auto;
+}
+
+.goals ul{
+
+    text-align: left;
+    
+}
+
+.goals ul li{
+
+    
+    list-style-type: circle;
+}
+
+
+.final{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 50px auto;
+}
+
+.final h2{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+.reseñas{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 50px auto;
+}
+
+.reseñas .info{
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 50px auto;
+}
+
+.reseñas .info h1{
+    font-size: 30px;
+}
+
+.reseñas .cards{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.reseñas .cards .opinion {
+    width: 30%;
+}
+.reseñas .cards .opinion blockquote{
+
+    
+
+    width: 100%;
+
+    padding: 25px;
+
+    margin: 10px 0;
+
+    border-left: 6px solid #0075B8;
+
+    background-color: #f7f7f76a;
+
+    border-radius: 10px;
+
+    font-style: italic;
+
+    line-height: 1.6;
+
+    color: #444;
+}
+
+.reseñas .cards .opinion cite{
+
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    min-height: 40vh;
+    background-color: #273043;
+    color: white;
+}
+
+.column{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    line-height: 2;
+} 
+
+
+
+
+
+
+#modal{
+
+    display: none;
+    position:fixed;
+    top:10em;
+    bottom: 10em;
+    left:10em;
+    right: 10em;
+    
+    background: rgb(255, 255, 255), 0.5;
+    backdrop-filter: blur(50px);
+     z-index:1000;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#modal-img{
+    width: 350px;
+    height: auto;
+}
+
+#cerrar-modal{
+
+    position:absolute;
+    top:40px;
+    left:40px;
+    padding:15px 25px;
+    cursor:pointer;
+
+}
+
+#modal p{
+    width:60%;
+    text-align:center;
+    line-height:1.6;
+
+}
+
